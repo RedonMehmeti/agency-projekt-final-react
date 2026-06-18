@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/originals/8f/c5/3f/8fc53fc5d0336c5eec2921c0033e33fc.png'); /* Replace 'your-background-image.jpg' with the actual image file path */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+
+        .nav {
+            background-color: rgb(189 196 180 / 70%);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .navitems {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #ecf0f1;
+        }
+
+        .info {
+            background-color: #2ecc71;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .link {
+            color: #fff;
+        }
+
+        .dropbtn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 100%; /* Display below the button */
+            right: 0;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f9f9f9;
+        }
+
+
+        .welcome-container {
+            text-align: center;
+            margin: 50px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .welcome {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .agency {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .contact {
+            display: block;
+            width: 150px;
+            margin: 30px auto;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+<div class="nav">
+    <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr5ky7UPioDg-ivfvLpgEgZPZ9NwelA40UUGvrhDUyazUwxwI9-4AJhlcQwExvgg9MjuA&usqp=CAU" alt="">
+    <div class="navitems">
+        <a class="info" href="https://www.youtube.com/watch?v=hCQvPX0DLFM">LEARN MORE</a>
+        <a class="link" href="./singup.html">SIGN UP</a>
+        <a class="link" href="./login.html">LOG IN</a>
+        <button class="dropbtn" onclick="toggleDropdown()">SHTETET</button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="./shteti1.html">Turkey</a>
+            <a href="./shteti2.html">Burj Khalifa</a>
+            <a href="./shteti3.html">Maldive</a>
+            <a href="./shteti4.html">Paris</a>
+            <a href="#">Austria</a>
+            <a href="#">California</a>
+            <a href="#">Las Vegas</a>
+        </div>
+    </div>
+</div>
+
+<div class="welcome-container">
+    <p class="welcome">WELCOME TO</p>
+    <p class="agency">OUR AGENCY</p>
+    <a class="contact" href="./contact.html">CONTACT</a>
+</div>
+<script>
+    function toggleDropdown() {
+        var dropdown = document.getElementById("myDropdown");
+        dropdown.style.display = (dropdown.style.display === "none" || dropdown.style.display === "") ? "block" : "none";
+    }
+</script>
+</body>
+
+</html>

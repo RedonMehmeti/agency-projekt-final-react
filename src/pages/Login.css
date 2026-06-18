@@ -1,0 +1,235 @@
+.auth {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  padding: 40px 20px;
+}
+
+.auth__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 440px;
+}
+
+.auth__card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-xl);
+}
+
+.auth__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth__header h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.auth__header p {
+  font-size: 15px;
+  color: var(--gray-600);
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth__field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--gray-700);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.auth__input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.auth__icon {
+  position: absolute;
+  left: 14px;
+  color: var(--gray-400);
+  pointer-events: none;
+}
+
+.auth__input-wrapper input {
+  width: 100%;
+  padding: 12px 14px 12px 44px;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--gray-900);
+  background: var(--gray-100);
+  transition: var(--transition);
+  outline: none;
+}
+
+.auth__input-wrapper input:focus {
+  border-color: var(--primary);
+  background: var(--white);
+  box-shadow: 0 0 0 4px rgba(93, 84, 164, 0.1);
+}
+
+.auth__input-wrapper input::placeholder {
+  color: var(--gray-400);
+}
+
+.auth__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.auth__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-600);
+  cursor: pointer;
+}
+
+.auth__checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+}
+
+.auth__forgot {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.auth__forgot:hover {
+  color: var(--primary-dark);
+}
+
+.auth__submit {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.auth__submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(93, 84, 164, 0.35);
+}
+
+.auth__footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.auth__footer p {
+  font-size: 14px;
+  color: var(--gray-600);
+}
+
+.auth__footer a {
+  color: var(--primary);
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.auth__footer a:hover {
+  color: var(--primary-dark);
+}
+
+.auth__decor {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  pointer-events: none;
+}
+
+.auth__decor-shape {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.auth__decor-shape--1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(93, 84, 164, 0.08), rgba(124, 120, 184, 0.08));
+  top: -60px;
+  right: -60px;
+}
+
+.auth__decor-shape--2 {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, rgba(39, 174, 96, 0.06), rgba(46, 204, 113, 0.06));
+  bottom: -30px;
+  left: -30px;
+}
+
+.auth__decor-shape--3 {
+  width: 80px;
+  height: 80px;
+  background: rgba(52, 152, 219, 0.05);
+  top: 40%;
+  left: -20px;
+}
+
+.auth__decor-shape--4 {
+  width: 150px;
+  height: 150px;
+  background: rgba(231, 76, 60, 0.04);
+  bottom: 20%;
+  right: -40px;
+}
+
+@media (max-width: 480px) {
+  .auth__card {
+    padding: 28px 20px;
+  }
+
+  .auth__header h2 {
+    font-size: 24px;
+  }
+
+  .auth__options {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

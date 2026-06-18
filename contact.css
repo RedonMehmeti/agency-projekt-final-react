@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color:#5E8693
+}
+img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+
+    
+}
+.nav1{
+    width: 100vw;
+    height:100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+}
+.phone{
+    display: flex;
+    gap: 2%;
+    padding-left: 35px;
+    padding-top: 70px;
+
+}
+.telefon{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    
+}
+.insta{
+    display: flex;
+    gap: 2%;
+    padding-left: 35px;
+    padding-top: 70px;
+
+}
+.instagram{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    
+}
+p{
+    padding-top: 15px;
+   
+    
+}
+.tik{
+    display: flex;
+    gap: 2%;
+    padding-left: 35px;
+    padding-top: 70px;
+
+}
+.tok{
+    width: 52px;
+    height: 52px;
+    border-radius: 25px;
+}
+.face{
+    display: flex;
+    gap: 2%;
+    padding-left: 35px;
+    padding-top: 70px;
+
+}
+.book{
+    width:50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.lokacioni{
+    padding-right: 17%;
+    font-size: 30px;
+ } 
+ .h{
+    width: 50%;
+    /* height: 600px; */
+    /* margin-top: 350px;  */
+    /* padding-top: 250px; */
+ }
+ .permbajtja{
+   padding:0% 5%;
+    display: flex;
+ }
+ .contact{
+    
+    width: 50%;
+ }
+   
